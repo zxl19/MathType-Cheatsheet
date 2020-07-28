@@ -1,7 +1,5 @@
 # MathType-Cheatsheet
 
-[![zxl19's github stats](https://github-readme-stats.vercel.app/api?username=zxl19)](https://github.com/anuraghazra/github-readme-stats)
-
 MathType快捷键速查表 [[PDF](https://github.com/zxl19/MathType-Cheatsheet/blob/master/cheatsheet.pdf)]
 
 ## 内容来源
