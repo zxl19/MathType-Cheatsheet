@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cheatsheet
+% LaTeX Template
+% Version 1.0 (12/12/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Michael Müller (https://github.com/cmichi/latex-template-collection) with
+% extensive modifications by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{scrartcl} % 11pt font size
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage[margin=0pt, landscape]{geometry} % Page margins and orientation
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{color} % Required for color customization
+\definecolor{mygray}{gray}{.75} % Custom color
+
+\usepackage{url} % Required for the \url command to easily display URLs
+
+\usepackage[ % This block contains information used to annotate the PDF
+colorlinks=false, 
+pdftitle={Cheatsheet}, 
+pdfauthor={John Smith}, 
+pdfsubject={Compilation of useful shortcuts}, 
+pdfkeywords={Random Software, Cheatsheet}
+]{hyperref}
+\usepackage{xeCJK}
+\usepackage{enumerate}
+\setlength{\unitlength}{1mm} % Set the length that numerical units are measured in
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\newcommand{\sectiontitle}[1]{\paragraph{#1} \ \\} % Custom command for subsection titles
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{picture}(297,210) % Create a container for the page content
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\put(10,200){ % Position on the page to put the title
+\begin{minipage}[t]{210mm} % The size and alignment of the title
+\section*{MathType快捷键速查表} % Title
+\end{minipage}
+}
+
+%----------------------------------------------------------------------------------------
+%	FIRST COLUMN SPECIFICATION
+%----------------------------------------------------------------------------------------
+
+\put(10,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house text
+%----------------------------------------------------------------------------------------
+%	HEADING ONE
+%----------------------------------------------------------------------------------------
+\sectiontitle{数学符号快捷键}
+\begin{itemize}
+	\item 分式
+	
+	\command{分式(\textbf{F}ractional)}{Ctrl + F}
+	\command{斜杠分式}{Ctrl + /}
+	
+	\item 根式
+	
+	\command{根式(\textbf{R}adical)}{Ctrl + R}
+	\command{n次根式}{Ctrl + T + N}
+	
+	\item 上下标
+	
+	\command{上标(\textbf{H}igh)}{Ctrl + H}
+	\command{下标(\textbf{L}ow)}{Ctrl + L}
+	
+	\item 括号
+	
+	\command{小括号}{Ctrl + 9 + 0}
+	\command{中括号}{Ctrl + [ + ]}
+	\command{大括号}{Ctrl + Shift + [ + ]}
+	
+	\item 导数与积分
+	
+	\command{单撇(一阶导数)}{Ctrl + Alt + '}
+	\command{双撇(二阶导数)}{Ctrl + Alt + ''}
+	\command{定积分号$\int$(\textbf{I}ntegration)}{Ctrl + I}
+	\command{偏导数符号$\partial$}{Ctrl + K + D}
+	
+	\item 不等式
+	
+	\command{小于等于$\leq$}{Ctrl + K + <}
+	\command{大于等于$\geq$}{Ctrl + K + >}
+	\command{恒等于$\equiv$}{Ctrl + K + =}
+	\command{不等于$\neq$}{Shift + =}
+\end{itemize}
+\end{minipage} % End the first column of text
+} % End the first division of the page
+
+%----------------------------------------------------------------------------------------
+%	SECOND COLUMN SPECIFICATION 
+%----------------------------------------------------------------------------------------
+
+\put(105,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house text
+
+%----------------------------------------------------------------------------------------
+%	HEADING ONE CONTINUED
+%----------------------------------------------------------------------------------------
+\sectiontitle{}
+\begin{itemize}
+	\item 上横线与矢量箭头
+	
+	\command{上横线}{Ctrl + Shift + -}
+	\command{矢量箭头}{Ctrl + Alt + -}
+	
+	\item 求和与连乘
+	
+	\command{求和符号$\sum$(\textbf{S}um)}{Ctrl + T + S}
+	\command{连乘符号$\prod$(\textbf{P}roduct)}{Ctrl + T + P}
+	
+	\item 希腊字母
+	
+	\command{小写希腊字母}{Ctrl + G + 字母}
+	\command{大写希腊字母}{Ctrl + G + Shift + 字母}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	HEADING TWO
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{其它快捷键}
+\begin{itemize}
+	\item 放大或缩小尺寸
+	
+	\command{100\%}{Ctrl + 1}
+	\command{200\%}{Ctrl + 2}
+	\command{300\%}{Ctrl + 3}
+	\command{400\%}{Ctrl + 4}
+	
+	\item 移动公式
+	
+	\command{选中}{Shift + 方向键}
+	\command{移动}{Ctrl + 方向键}
+	
+	\item 元素间的跳转
+	
+	\command{转向下一步}{Tab}
+	\command{换行}{Enter}
+\end{itemize}
+\end{minipage} % End the second column of text
+} % End the second division of the page
+
+%----------------------------------------------------------------------------------------
+%	THIRD COLUMN SPECIFICATION 
+%----------------------------------------------------------------------------------------
+
+\put(200,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house tex
+
+%----------------------------------------------------------------------------------------
+%	HEADING TWO CONTINUED
+%----------------------------------------------------------------------------------------
+\sectiontitle{}
+\begin{itemize}
+	\item 文本加粗
+	
+	\command{选中}{Shift + 方向键}
+	\command{加粗}{Ctrl + Shift + B}
+	
+	\item 输入空格
+	
+	\command{增加空格}{Ctrl + Alt + 空格}
+	\command{增加空格}{Ctrl + Shift + 空格}
+	
+	\item 选取菜单或工具条
+	
+	\command{进入菜单}{Alt + F10}
+	\command{工具条第一行}{F2}
+	\command{工具条第二行}{F6}
+	\command{工具条第三行}{F7}
+	\command{工具条第四行}{F8}
+	\command{工具条第五行}{F9}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	LINKS AND INFORMATION
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{参考}
+\begin{enumerate} [1.]
+	\item \url{https://www.mathtype.cn/jiqiao/changyong-kuaijiejian.html}
+	
+	\item \url{https://www.mathtype.cn/jiqiao/mathtype-kuaijiejian-shiyong.html}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	FOOTNOTE
+%----------------------------------------------------------------------------------------
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\begin{flushright}
+	\linethickness{0.5mm} % Thickness of the footer line
+	{\color{mygray}\line(1,0){50}} % Print the line with a custom color
+	
+	\footnotesize{
+		Created by zxl19, 2020\\ 
+		\url{https://zxl19.github.io/}\\
+		
+		Released under the MIT license.
+	}
+\end{flushright}
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the third column of text
+} % End the third division of the page
+\end{picture} % End the container for the entire page
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
