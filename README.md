@@ -13,5 +13,5 @@ MathType快捷键速查表 [[PDF](https://github.com/zxl19/MathType-Cheatsheet/b
 
 ## TODO
 
-1. 美化排版
-2. 英文版翻译
+- [ ] 美化排版
+- [ ] 英文版翻译
